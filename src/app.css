@@ -635,7 +635,8 @@ border-radius:8px;
     border: 2px solid #D4AF37;
     padding: 50px; 
   }
-  .contact-box-inner:before, .box-inner:after {
+   .contact-box-inner:before, 
+   .contact-box-inner:after {
     content: "•";
     position: absolute;
     width: 14px;
@@ -646,14 +647,14 @@ border-radius:8px;
     line-height: 12px;
     bottom: -2px;
     text-align: center;
-  }
+  } 
  
-  .contact-box-inner:before {
+   .contact-box-inner:before {
     left: -2px;
   }
   .contact-box-inner:after {
     right: -2px;
-  }
+  } 
 
   form{
   padding:50px;
