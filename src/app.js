@@ -16,12 +16,12 @@ const btnForm = document.querySelector('input[type="submit"]');
 const inputs = document.querySelector('form');
 btnForm.addEventListener('click', () => {
     Email.send({
-        Host: "smtp.mailtrap.io",
-        Username: '28461f19c37d49',
-        Password: '88e586102d87e8',
-        To: 'wojtektsw1@gmail.com',
+        Host: "smtp.gmail.com",
+        Username: 'adebe.beats@gmail.com',
+        Password: 'aqhhrbbtbgfvghoa',
+        To: 'adebe.beats@gmail.com',
         From: inputs.elements["email"].value,
-        Subject: "Contact with me as a customer",
+        Subject: "Contact from the contact form",
         Body: inputs.elements["message"].value + "<br>" + inputs.elements["name"].value
-    }).then(msg => alert("The email succesfully sent"))
+    }).then(msg => alert("The email has been succesfully sent"))
 })
