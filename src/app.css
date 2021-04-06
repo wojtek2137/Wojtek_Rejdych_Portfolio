@@ -699,6 +699,15 @@ form .submit:hover{
       padding-top: 90px;
     color:#d5d5dd;
 }
+.listen-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg,#b8ff2e,#2ea8ff);
+    background-attachment: fixed;
+}
+
 @media (max-width: 770px){
     .logo-text {
         font-size: 1em;
