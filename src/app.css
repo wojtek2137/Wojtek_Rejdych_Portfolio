@@ -577,6 +577,140 @@ border-radius:8px;
     padding:5% 10%;
     margin:0 10%;
 }
+.listen{
+    background-color: #f5cb5c;
+    background-image: linear-gradient(0deg, #000000 0%, #f5cb5c 94%);
+    background-attachment: fixed;
+}
+.listen-container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.listen h2{
+    text-align:center;
+    font-size: 4em;
+    letter-spacing: 5px;
+    color:#242424;
+    font-weight: 900;
+}
+.card-container{
+    position: relative;
+    width:1000px; 
+    display:flex;
+    justify-content: space-around;
+    margin:20px;
+    padding:20px 0;
+}
+ .card-container .card{
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display:flex;
+    width:35%;
+    margin: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-container .card .listen-img-box{
+position: absolute;
+top:10px;
+left:10px;
+background: rgba(255,255,255,0.1);
+height:calc(100% - 20px);
+width:calc(100% - 20px);
+backdrop-filter: blur(20px);
+z-index:1;
+display:flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+border-radius: 20px;
+border: 1px solid rgba(255,255,255,0.2);
+box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+transition: 0.5s ease-in-out;
+}
+
+.card-container .card:hover .listen-img-box{
+    height:150px;
+    width: 150px;
+    left:-75px;
+    top: calc(50% - 75px);
+}
+
+.card-container .card .listen-img-box img{
+    max-height: 190px;
+    transition: 0.5s ease-in-out;
+}
+.card-container .card:hover .listen-img-box img{
+    max-width: 75px;
+}
+
+.card-container .card .listen-content{
+    position:absolute;
+    right:0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display:flex;
+    justify-content: start;
+    align-items:flex-end;
+}
+
+.card-container .card .listen-content h3{
+    color:#f5cb5c;
+    font-size:24px;
+    text-align:center;
+}
+.streaming{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
+
+.streaming li{
+    list-style:none;
+    margin:10px 10px 0 0;
+    padding: 0;
+}
+
+.streaming li img{
+   transform: scale(1);
+   opacity: 0.7;
+}
+
+.streaming li img:hover{
+    transform: scale(1.23);
+    opacity: 1;
+ } 
+
+.listen-row {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row;
+   justify-content: center;
+}
+.col6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 40%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+
+}
+ .yt-listen iframe {
+    width: 100%;
+    min-height: 30vh;
+    border-radius: 7px;
+    
+}
 .form-container{
    
     text-align:center;
@@ -699,16 +833,9 @@ form .submit:hover{
       padding-top: 90px;
     color:#d5d5dd;
 }
-.listen-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(0deg,#b8ff2e,#2ea8ff);
-    background-attachment: fixed;
-}
 
-@media (max-width: 770px){
+
+@media (max-width: 767.98px){
     .logo-text {
         font-size: 1em;
     }
@@ -767,42 +894,9 @@ form .submit:hover{
     .scale-bg, .madzia{
         padding:8%;
     }
-    .project-headers-madzia {
-    
-        background-color: transparent; 
-         border-radius: 0;
-        padding: 0;
-        margin: 0;
-    }
-    .project-headers,
-    .project-headers-madzia{
+    .project-headers{
         flex-direction: column;
         flex-basis: 50%;   
-    }
-    .project-header-madzia{
-        align-items: center;
-        justify-content: center;
-        background-color: #ffcfdce3;
-        border-radius: 100px 200px;
-        padding: 10%;
-        margin: 0 10%;
-    }
-    .project-header-madzia h1 {
-        padding: 0;
-        margin: 15% 0;
-        font-weight: 400;
-        font-size: 1.3em;
-    }
-    
-    .project-tech-madzia {
-        margin-bottom: 30px;
-    }
-    .project-paragraph{
-        flex-basis:80%;
-    }
-    .project-paragraph-madzia {
-        margin: 10% 0% 13%;
-       
     }
     .madzia-title p{
         font-size:1.66em;
@@ -811,6 +905,13 @@ form .submit:hover{
      .madzia-title h1{
         font-size:1.6em;
     } 
+    .listen h2{
+        text-align:center;
+        font-size: 2.5em;
+        letter-spacing: 3px;
+        color:#242424;
+        font-weight: 900;
+    }
     form {
         padding: 0;
     }
@@ -820,7 +921,74 @@ form .submit:hover{
 }
 
     
-@media (max-width:991px){
+@media (max-width: 991.98px){
+    .listen-row {
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        flex-direction: column;
+    }
+    .col6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 100%;
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top:25px;
+    }
+
+    .card-container{
+        position:relative;
+        width:100%;
+        flex-direction: column;
+        align-items:center;
+    }
+    .card-container .card{
+        width: 300px;
+        height:auto;
+        flex-direction: column;
+        background:transparent;
+        margin: -20px 0;
+        box-shadow:none; 
+     }
+     .card-container .card .listen-img-box{
+         position:relative;
+     }
+     .card-container .card .listen-img-box,
+     .card-container .card:hover .listen-img-box{
+         width:80%;
+         height: 200px;
+         top:100px;
+         left:10%;
+     }
+     .card-container .card:hover .listen-img-box{
+         top:80px;
+     }
+     .card-container .card .listen-img-box img,
+     .card-container .card:hover .listen-img-box img{
+       max-width: 100px;
+     }
+    
+     .card-container .card .listen-content{
+         position:relative;
+         width:100%;
+         background: #fff;
+         box-shadow:none;
+         border-radius: 20px;
+         padding: 20px 40px 40px;
+         border-top:100px solid #fff;
+         justify-content: center;
+     }
+
+    .form-container {
+        padding: 40px 40px 0px 40px;
+    }
+}
+
+@media (max-width: 1199.98px) { 
     .banner .img-sidebar{
         display:none;
     }
@@ -840,6 +1008,7 @@ form .submit:hover{
     section{
      padding:40px;
     }
+   
     .about .content .img-box img{
         display:none;
     }
@@ -853,7 +1022,66 @@ form .submit:hover{
         radial-gradient(circle, rgba(223, 219, 165, 0.876) 0%, rgba(0, 0, 0, 0.726) 100%),
          url("../images/bg.jpg");
     }
-    .form-container {
-        padding: 40px 40px 0px 40px;
+    .project-headers-madzia {
+    
+        background-color: transparent; 
+         border-radius: 0;
+        padding: 0;
+        margin: 0;
     }
-}
+
+    .project-headers-madzia{
+        flex-direction: column;
+        flex-basis: 50%;   
+    }
+    .project-header-madzia{
+        align-items: center;
+        justify-content: center;
+        background-color: #ffcfdce3;
+        border-radius: 100px 200px;
+        padding: 10%;
+        margin: 2% 10%;
+    }
+    .project-header-madzia h1 {
+        padding: 0;
+        margin: 15% 0;
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+    
+    .project-tech-madzia {
+        margin-bottom: 30px;
+    }
+    .project-paragraph{
+        flex-basis:80%;
+    }
+    .project-paragraph-madzia {
+        margin: 10% 0% 13%;
+       
+    }
+ 
+  .card-container .card .listen-content h3{
+        font-size:18px;
+        text-align: center;
+    }
+
+    .streaming{
+        margin-top: 10px;
+    }
+    
+    .streaming li{
+        list-style:none;
+        margin: 10px 0;
+    
+    }
+    
+    .streaming li img{
+       transform: scale(0.7);
+   
+    }
+    
+    .streaming li img:hover{
+        transform: scale(0.9);
+     }  
+
+ }
