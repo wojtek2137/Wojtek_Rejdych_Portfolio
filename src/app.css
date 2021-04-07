@@ -572,7 +572,7 @@ border-radius:8px;
 .project-headers-madzia{
     align-items: center;
     justify-content: center;
-    background-color: #ffcfdce3;
+    background-color: #fee6f9;
     border-radius: 100px 200px;
     padding:5% 10%;
     margin:0 10%;
@@ -855,6 +855,12 @@ form .submit:hover{
         margin: 25px 0;
     
     }
+    .about{
+        padding:10px;
+    }
+    .title-about{
+        text-align: center;
+    }
     .title-about h2{
         font-size: 2em;
      }
@@ -897,6 +903,12 @@ form .submit:hover{
     .project-headers{
         flex-direction: column;
         flex-basis: 50%;   
+    }
+    .project-paragraph{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 5%;
+        width: 100%;
     }
     .madzia-title p{
         font-size:1.66em;
@@ -1021,6 +1033,7 @@ form .submit:hover{
         background-image: 
         radial-gradient(circle, rgba(223, 219, 165, 0.876) 0%, rgba(0, 0, 0, 0.726) 100%),
          url("../images/bg.jpg");
+        background-attachment: fixed;
     }
     .project-headers-madzia {
     
@@ -1037,7 +1050,7 @@ form .submit:hover{
     .project-header-madzia{
         align-items: center;
         justify-content: center;
-        background-color: #ffcfdce3;
+        background-color: #fee6f9;
         border-radius: 100px 200px;
         padding: 10%;
         margin: 2% 10%;
