@@ -18,7 +18,7 @@ btnForm.addEventListener('click', () => {
     Email.send({
         Host: "smtp.gmail.com",
         Username: 'adebe.beats@gmail.com',
-        Password: 'aqhhrbbtbgfvghoa',
+        Password: 'tnpccszvkywbzczc',
         To: 'adebe.beats@gmail.com',
         From: inputs.elements["email"].value,
         Subject: "Contact from the contact form",
