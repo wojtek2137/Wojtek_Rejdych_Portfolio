@@ -835,6 +835,23 @@ form .submit:hover{
     color:#d5d5dd;
 }
 
+@media (max-height: 450px){
+    .banner-sm-scn {
+        padding-top: 80px !important;
+    }
+    .sci{
+        left:auto !important;
+        right: 0 !important;
+    }
+    .banner .content-box p {
+        margin: 15px 0 !important;
+    }
+    .btn {
+        padding: 7px 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
 
 @media (max-width: 767.98px){
     .logo-text {
