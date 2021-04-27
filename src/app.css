@@ -225,7 +225,7 @@ text-transform: uppercase;
 .about .content .text-box p{
     color: #fff;
     font-size: 1.1em;
-    font-weight: 300;
+    font-weight: 100;
 }
  .title-courses,
  .title-projects{
@@ -850,16 +850,12 @@ form .submit:hover{
         padding: 7px 20px;
         font-weight: 400;
         letter-spacing: 1px;
+        margin-bottom: 30px;
     }
-}
+}  
 
 @media (max-width: 767.98px){
-    .logo-text {
-        font-size: 1em;
-    }
-    .banner-sm-scn{
-        padding-top:30px;
-    }
+    
     .banner .content-box h2 {
         font-size: 2.3em;
 
@@ -952,6 +948,15 @@ form .submit:hover{
 
     
 @media (max-width: 991.98px){
+    .logo-text {
+        font-size: 1.5em;
+    }
+    .banner-sm-scn{
+        padding-top:30px;
+    }
+    .banner .content-box, .sidebar {
+        padding: 90px;
+    }
     .listen-row {
         margin-top: 35px;
         display: flex;
@@ -1018,14 +1023,13 @@ form .submit:hover{
     }
 }
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 1500.98px) { 
     .banner .img-sidebar{
         display:none;
     }
 
     .banner .content-box,.sidebar{
        width:100%;
-       padding:40px;
        background:url('../images/bg1.jpg');
        object-fit: cover;
        background-position: left;
