@@ -78,7 +78,7 @@ section{
     position: absolute;
     top: 40px;
     left: 100px;
-    font-size: 1.5em;
+    font-size: 1.65em;
     text-transform: uppercase;
     letter-spacing: 5px;
     background:#fff;
@@ -948,14 +948,18 @@ form .submit:hover{
 
     
 @media (max-width: 991.98px){
+    .toggle{
+        top: 20px;
+    }
     .logo-text {
-        font-size: 1.5em;
+        font-size: 1.3em;
+        top:25px;
     }
-    .banner-sm-scn{
+    /* .banner-sm-scn{
         padding-top:30px;
-    }
-    .banner .content-box, .sidebar {
-        padding: 90px;
+    } */
+    .banner .content-box h2 {
+        line-height: 0.85em;
     }
     .listen-row {
         margin-top: 35px;
@@ -1035,6 +1039,7 @@ form .submit:hover{
        background-position: left;
        background-size: cover;
        background-repeat: no-repeat;
+       padding:100px 40px;
     }
     .sci{
         left:40px;
